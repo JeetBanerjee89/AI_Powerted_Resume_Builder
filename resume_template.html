@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 0;
+        }
+        .contact {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 20px;
+            border-bottom: 2px solid #2c3e50;
+            margin-top: 30px;
+        }
+        p, li {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>{{name}}</h1>
+    <div class="contact">
+        <strong>Email:</strong> {{email}} | 
+        <strong>Phone:</strong> {{phone}}
+    </div>
+
+    <section>
+        <h2>Profile Summary</h2>
+        <p>{{summary}}</p>
+    </section>
+
+    <section>
+        <h2>Competencies</h2>
+        <ul>
+            {{competencies}}
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p>{{education}}</p>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <p>{{certifications}}</p>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <p>{{experience}}</p>
+    </section>
+
+</body>
+</html>

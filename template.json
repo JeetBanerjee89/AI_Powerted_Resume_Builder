@@ -1,0 +1,20 @@
+{
+    "name": null,
+    "input_variables": [
+      "user_input_profile_summary",
+      "user_input_competencies",
+      "user_input_education",
+      "user_input_certification",
+      "user_input_experience"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "Please create a professional technical resume using the following strict Markdown structure.\n\nUse exactly `## Heading` (not bold text and no other styles and no trailing space after Heading) for each section.\nBullet points must start with `- ` and be on separate lines.\nDo not use any additional formatting styles (no bold, italics, or extra symbols).\n\nHere is the required format:\n\n## Profile Summary\n\n{user_input_profile_summary}\n\n## Competencies\n\n{user_input_competencies}\n\n## Education\n\n{user_input_education}\n\n## Certification\n\n{user_input_certification}\n\n## Work Experience\n\n{user_input_experience}\n\nOnly return the resume in Markdown format with no trailing space after Summary, Competencies, Education, Certification and Work Experience headings. Refine sections as per professional resume.",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+  }
+  
